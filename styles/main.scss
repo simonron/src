@@ -1,0 +1,78 @@
+/*
+@import "../node_modules/susy/sass/susy",
+        "../node_modules/layout-tools-for-susy/stylesheets/layout-tools-for-susy";
+*/
+
+@import "../node_modules/susy/sass/susy";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-mincer";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../partials/susyConfig";
+@import "../partials/overrides";
+@import "../partials/layout";
+@import "../partials/SRAmenu";
+@import "../partials/menu";
+$primary-color: #f00;
+
+/*	.ag{
+		display:none  
+	}*/
+
+.full {
+	@include span(full);
+}
+#title {
+	color: $primary-color;
+	margin-bottom: 100px;
+}
+
+body {
+	padding: 10px;
+	h2 {
+		color: blue;
+		margin-bottom: 5px;
+	}
+}
+.container {
+	display: block;
+	@include clearfix
+}
+.holder {
+	background: #ccc;
+	@include span(12 of 12 last);
+	margin-bottom: 10px;
+}
+.frog {
+	background: #f00;
+	@include span(12 of 12 last)
+}
+
+/**
+ - Styles for AG Container
+ */
+
+.ag1,
+.ag3 {
+	background-color: #71dad2;
+}
+.ag2 {
+	background-color: #fae7b3;
+}
+.ag4,
+.ag5,
+.ag8,
+.ag9 {
+	background-color: #ee9e9c;
+}
+.ag6 {
+	background-color: #f09671;
+}
+.ag7 {
+	background-color: #f6d784;
+}
+.ag10 {
+	background-color: #ea9fc3;
+}
+
